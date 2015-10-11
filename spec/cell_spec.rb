@@ -1,6 +1,6 @@
 require 'cell'
 
-describe Cell do
+describe 'Unit - Cell' do
 	let(:cell){Cell.new}
 	let(:content){double :content, hit!: true}
 	before{cell.content = content}
@@ -16,7 +16,7 @@ describe Cell do
 
 	it "knows when it's been hit" do
 		cell.shoot
-		expect(cell.hit?).to eq true 
+		expect(cell.hit?).to eq true
 	end
 
 end

@@ -1,5 +1,6 @@
 require 'water'
-describe Water do
+
+describe 'Unit - Water' do
 	let(:water){Water.new}
 	it "can be hit" do
 		water.hit!

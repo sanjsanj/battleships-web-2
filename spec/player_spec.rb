@@ -1,14 +1,15 @@
 require 'player'
-describe Player do
+
+describe 'Unit - Player' do
 	let(:player){Player.new}
 	let(:board){double :board}
-	 
-	it "can have a name" do 
+
+	it "can have a name" do
 		player.name = "Stephen"
 		expect(player.name).to eq "Stephen"
 	end
 
-	it "can have a board" do 
+	it "can have a board" do
 		player.board = board
 		expect(player.board).to eq board
 	end
